@@ -17,7 +17,12 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.section1-breakpoint-container {
+  display: none;
+  width: 100%;
+  height: 350px;
+  background-color: red;
+}
 .container1 {
   max-width: 1100px;
   height: 1500px;
@@ -1675,6 +1680,7 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
   .header-text {
     display: none;
@@ -1728,11 +1734,91 @@ body {
     font-size: 14px;
   }
   .section1-box1 {
-    display: non;
+    display: none;
   }
   .section1-box2 {
-    display: non;
+    display: none;
   }
+  .section1-breakpoint {
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .section1-breakpoint-container {
+    display: block;
+    position: relative;
+  }
+  .section1-breakpoint-container img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  .section1-breakpoint-text-container {
+    width: 100%;
+    padding: 0px 0px 30px 30px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    margin: 250px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgb(68, 68, 68);
+    background: linear-gradient(
+      0deg,
+      rgba(68, 68, 68, 0.5606836484593838) 63%,
+      rgba(64, 63, 63, 0.3197872899159664) 81%,
+      rgba(0, 0, 0, 0) 95%
+    );
+  }
+  .section1-breakpoint-text-title-live {
+    background-color: red;
+    padding: 5px 10px;
+    width: 8%;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .section1-breakpoint-text {
+    color: white;
+  }
+  .section1-breakpoint-reaction-share {
+    background-color: rgba(33, 33, 33, 0.7);
+    display: flex;
+    gap: 10px;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  .section1-breakpoint-text-title-business {
+    background-color: orange;
+    padding: 5px 10px;
+    width: 8%;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .section1-breakpoint-share-number {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 14px;
+  }
+  .section1-breakpoint-reaction {
+    display: flex;
+    gap: 10px;
+    height: auto;
+    align-items: center;
+  }
+  .section1-breakpoint-commen-number {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
   .section2 {
     max-width: 950px;
   }
@@ -1780,12 +1866,16 @@ body {
   .section3-box1-news {
     width: 70%;
   }
+  .section4 {
+    height: 1130px;
+  }
   .section4-container {
     width: 100%;
     flex-direction: column;
     min-height: 1130px;
     padding: 0px 30px;
     gap: 30px;
+    position: relative;
   }
   .section4-left {
     height: auto;
@@ -1794,24 +1884,30 @@ body {
   .section4-right {
     width: 100%;
     padding: 0;
+    height: 550px;
+    justify-content: center;
   }
   .section4-right-content {
-    width: 48.87%;
+    width: calc(50% - 30px - 10px);
   }
   .section4-right-content-text {
     width: 48.87%;
   }
   .section5 {
-    margin: 600px 0px 0px;
+    margin: 100px 0px 0px;
+    height: auto;
+    position: relative;
+  }
+  .section5-container {
   }
   .section8 {
     padding: 50px 30px;
   }
   .section8-container {
-    max-width: 890px;
+    width: 100%;
   }
   .section8-content {
-    width: 48.87%;
+    width: calc(50% -30px -20px);
     position: relative;
   }
   .section8-content-container {
@@ -1819,7 +1915,7 @@ body {
   }
   .section8-content-top-icon {
     justify-content: flex-start;
-    margin: 0px 0px 0px -435px;
+    
   }
   .section8-content-img {
     object-fit: cover;
@@ -1832,5 +1928,12 @@ body {
     width: 100%;
     position: relative;
     justify-content: flex-start;
+    width: calc(50% -30px -20px);
   }
+  .section8-content-text-container {
+    width: calc(50% -30px -20px);
+  }
+  
+    
+  
 }
