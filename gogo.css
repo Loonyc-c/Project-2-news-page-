@@ -23,6 +23,12 @@ body {
   height: 350px;
   background-color: red;
 }
+.section1-breakpoint-menu {
+  display: none;
+}
+.header-menu-img {
+  display: none;
+}
 .container1 {
   max-width: 1100px;
   height: 1500px;
@@ -184,7 +190,7 @@ body {
   color: #407ce8;
   transform: translateX(10px);
 }
-.header-text:active .dropdown-content-lifestyle {
+.header-text:hover .dropdown-content-lifestyle {
   display: flex;
 }
 .search-input {
@@ -194,7 +200,7 @@ body {
   display: none;
   top: 25px;
   z-index: 1;
-  left: 430px;
+  left: 500px;
   color: #888;
 }
 
@@ -537,7 +543,6 @@ body {
 }
 .section1-breakpoint-menu {
   display: none;
-  
 }
 
 .section2 {
@@ -885,7 +890,7 @@ body {
 
 .section3-box1-poll {
   width: 100%;
-  height: 322px;
+  height: auto;
   background-color: #407ce8;
   padding: 20px;
 }
@@ -903,9 +908,8 @@ body {
 }
 
 .section3-box1-poll-choise-container {
-  width: 650px;
-  height: 53px;
-
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   margin: 0px 0px 5px 0px;
@@ -926,7 +930,7 @@ body {
 
 .section3-box1-poll-choise-result {
   font-size: 14px;
-  margin-left: 50px;
+  padding: 0px 0px 0px 50px;
   display: block;
   display: flex;
   align-items: center;
@@ -1090,7 +1094,6 @@ body {
   flex-direction: column;
   margin: auto;
   padding: 100px 0px 0px;
-
 }
 .section4-header {
   width: 100%;
@@ -1099,7 +1102,6 @@ body {
 
 .section4-header-container {
   width: 100%;
-  
 }
 
 .section4-header-text {
@@ -1108,7 +1110,6 @@ body {
   padding: 10px 0px;
   gap: 5px;
   left: 0;
- 
 }
 .section4-header h2 {
   font-size: 20px;
@@ -1366,7 +1367,6 @@ body {
   margin: auto;
   flex-direction: column;
   padding: 50px 0px 0px;
-
 }
 .section6-header-container {
   width: 100%;
@@ -1463,7 +1463,6 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
-
 
   align-items: center;
 
@@ -1667,8 +1666,6 @@ body {
   max-width: 1100px;
   height: auto;
   padding: 50px 0px;
-  display: flex;
-  flex-direction: column;
   margin: auto;
 }
 .section9-container {
@@ -1694,23 +1691,23 @@ body {
   gap: 5px;
 }
 .section9-bottom-text1 {
-  width: auto;
+  width: 100%;
   height: auto;
   font-size: 12px;
-  text-align: left;
-  white-space: nowrap;
 }
 .section9-bottom-text2 {
   width: 100%;
   height: auto;
   gap: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 .section9-bottom {
   width: 100%;
   height: auto;
   display: flex;
   padding: 30px 0px 0px;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 @media screen and (max-width: 950px) {
   .section-1 {
@@ -1733,7 +1730,7 @@ body {
     align-items: center;
   }
   .header-left {
-    width: 9.4%;
+    width: 25%;
   }
   .header-left img {
     width: 100%;
@@ -1778,6 +1775,19 @@ body {
   .section1-box2 {
     display: none;
   }
+  .header-menu-breakpoint {
+    display: block;
+    width: 9%;
+    padding: 13px 18px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+  .header-menu-img {
+    display: block;
+  }
+  .header-menu-breakpoint:hover {
+    cursor: pointer;
+  }
   .section1-breakpoint {
     display: flex;
     width: 100vw;
@@ -1787,6 +1797,7 @@ body {
   .section1-breakpoint-container {
     display: block;
     position: relative;
+    justify-content: flex-end;
   }
   .section1-breakpoint-container img {
     width: 100vw;
@@ -1927,7 +1938,7 @@ body {
     width: 70%;
   }
   .section4 {
-    height: 1130px;
+    height: auto;
   }
   .section4-container {
     width: 100%;
@@ -1973,9 +1984,6 @@ body {
   .section8-content-container {
     width: 100%;
   }
-  .section8-content-top-icon {
-    justify-content: flex-start;
-  }
   .section8-content-img {
     object-fit: cover;
     width: 100%;
@@ -1999,28 +2007,135 @@ body {
     display: flex;
   }
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
   .section9-container {
     flex-direction: column;
     align-items: center;
   }
   .section9-container div {
-    padding: 20px 0px 0px ;
-    
+    padding: 20px 0px 0px;
   }
   .section9-bottom {
-    margin: auto
+    flex-direction: column;
+    align-items: center;
   }
+
   .section8-content {
     width: 100%;
-  }
-  .section8-content-img-container {
     position: relative;
   }
 
+  .section8-content-top-icon {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+  .section9-bottom-text2 {
+    justify-content: center;
+    padding: 20px 0px 0px;
+  }
+  .section9-bottom-text1 {
+    text-align: center;
+  }
+  .section9-container img {
+    width: 30%;
+  }
+  .section1-breakpoint-text-title-live {
+    width: 60px;
+  }
+  .section1-breakpoint-text-title-business {
+    width: 60px;
+  }
+  .header-menu-breakpoint {
+    width: 13%;
+    padding: 13px 18px;
+  }
 
-
- 
-  
+  .section3-box1-content {
+    height: 110px;
+  }
+  .section3-box1-content img {
+    height: 100%;
+  }
+  .section3-box1-news-title {
+    font-size: 15px;
+  }
+  .section3-box1-news-text {
+    display: none;
+  }
+  .section3-box1-news-reaction {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    padding: 10px 0px 0px;
+  }
+  .section3-box1-news-reaction p {
+    font-size: 12px;
+  }
+  .section3-box1-hidden-container {
+    width: 100%;
+  }
+  .section3-box1-hidden {
+    font-size: 12px;
+    height: 100%;
+  }
+  .section4-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section4-left-text {
+    width: 95%;
+    padding: 10px;
+  }
+  .section4-left-text h3 {
+    font-size: 12px;
+  }
+  .section4-left-text-title {
+    width: 100px;
+    font-size: 10px;
+  }
+  .section4-left-img1 {
+    height: auto;
+  }
+  .section4-right {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: auto;
+  }
+  .section4-right-content {
+    width: 100%;
+    height: auto;
+  }
+  .section4-right-content-text {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    padding: 10px;
+  }
+  .section4-right-content-img {
+    height: auto;
+    width: 100%;
+  }
+  .section4-right-content-img img {
+    width: 100%;
+    height: auto;
+  }
+  .section4-container {
+    height: auto;
+    padding: 0px 10px;
+  }
+  .section4-left-img {
+    height: auto;
+  }
+  .section4-left-text {
+    height: auto;
+    overflow: hidden;
+  }
+  .section5 {
+    padding: 100px 0px 0px;
+    height: auto;
+    margin: auto;
+  }
 }
-
