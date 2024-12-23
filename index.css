@@ -220,17 +220,17 @@ body {
   left: -290px;
 }
 
-.search-input-f {
+/* .search-input-f {
   width: 100%;
   height: 40px;
   border-radius: 10px;
   border: 1px solid;
   border-color: #407ce8;
-}
+} */
 .search-input-f {
   font-size: 16px;
 }
-.search:hover .search-input {
+.search:hover  {
   display: flex;
 }
 .search:hover {
