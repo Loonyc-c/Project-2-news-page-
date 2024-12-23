@@ -35,10 +35,15 @@ body {
 }
 
 .header-box {
+<<<<<<< Updated upstream
   max-width: 1100px;
+=======
+  width: 100%;
+>>>>>>> Stashed changes
   height: 88px;
   display: flex;
   align-items: center;
+  overflow: auto;
 }
 
 .header-left {
@@ -56,9 +61,15 @@ body {
 .header-right {
   width: 32.55%;
   height: 50px;
+<<<<<<< Updated upstream
   display: flex;
   justify-content: end;
   gap: 35px;
+=======
+  margin: -15px;
+  display: flex;
+  justify-content: end;
+>>>>>>> Stashed changes
 }
 
 .header-right:hover {
@@ -198,10 +209,15 @@ body {
   height: 50px;
   position: absolute;
   display: none;
-  top: 25px;
+  top: 15px;
   z-index: 1;
+<<<<<<< Updated upstream
   left: 500px;
+=======
+>>>>>>> Stashed changes
   color: #888;
+  position: relative;
+  left: -290px;
 }
 
 .search-input-f {
@@ -1196,6 +1212,14 @@ body {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+<<<<<<< Updated upstream
+=======
+  object-fit: contain;
+}
+.section4-right-content img {
+  width: 255px;
+  height: 265px;
+>>>>>>> Stashed changes
   object-fit: cover;
 }
 .section4-right-content-text {
@@ -1224,6 +1248,7 @@ body {
   width: 100%;
   height: 265px;
   transition: all 1s;
+  object-fit: contain;
 }
 .section4-right-content-img1 {
   height: 100%;
@@ -1297,13 +1322,22 @@ body {
   height: 230px;
   overflow: hidden;
   border-radius: 10px 10px 0px 0px;
-  transition: ease-in 5s;
+  position: relative;
 }
 .section5-content-img img {
+<<<<<<< Updated upstream
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+=======
+  object-fit: cover;
+  width: 265px;
+  height: 230px;
+  transition: all 1s;
+}
+
+>>>>>>> Stashed changes
 .section5-content-text-container {
   width: 100%;
   height: 130px;
@@ -1347,10 +1381,15 @@ body {
   margin: 0px 0px 200px;
   z-index: 1;
 }
+<<<<<<< Updated upstream
 .section5-content-img img {
   transition: all 1s;
 }
 .section5-content-img:hover img {
+=======
+
+.section5-content-img img:hover {
+>>>>>>> Stashed changes
   transform: scale(1.1);
 }
 
@@ -1404,11 +1443,18 @@ body {
   overflow: hidden;
   border-radius: 10px;
   transition: all 1s;
+  position: relative;
 }
 .section6-content-img img {
+<<<<<<< Updated upstream
   width: 100%;
   height: 100%;
   transition: all 1s;
+=======
+  width: 265px;
+  height: 170px;
+  object-fit: contain;
+>>>>>>> Stashed changes
 }
 .section6-content-text-container {
   width: 100%;
@@ -1499,12 +1545,19 @@ body {
 .section7-content-img {
   width: 100%;
   height: 60%;
+<<<<<<< Updated upstream
   overflow: hidden;
+=======
+  object-fit: contain;
+  overflow: hidden;
+  position: relative;
+>>>>>>> Stashed changes
 }
 .section7-content-img img {
   width: 100%;
   height: 100%;
   transition: 1s;
+  object-fit: contain;
 }
 .section7-content-hidden {
   width: 540px;
